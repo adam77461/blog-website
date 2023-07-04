@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="icon" type="image/x-icon" href="/assts/IMG_0963.ico">
+	<title>Adam's website</title>
+	<style type="text/css">
+		img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {display: none;}
+		.title{
+			font-family: fantasy;
+			border-color: cyan;
+			border-bottom: double;
+		}
+		body{
+			background: rgb(1, 1, 1);
+			color: lightgrey;
+		}
+		#bannerImg{
+			height: 100%;
+			width: 100%;
+			display: flex;
+		}
+		#bannerImg::before{
+			content: "";
+			background-image: url('assts/IMG_0963.jpg');
+			background-size: cover;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			left: 0px;
+			opacity: 0.10;
+		}
+		h1 {
+			font-family: ;
+			line-height: 0.9;
+		}
+		a {
+			color: aqua;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		a:link, a:visited {
+			color: blue;
+		}
+
+		#footerWelcome{
+			position: absolute;
+			bottom: 0;
+			width: 99%;
+			background-size: cover;
+			background-color: black;
+			color: lightgrey;
+		}
+		.menu{
+			width: 99%;
+			background-size: cover;
+			background-color:transparent;
+			color: lightgrey;
+			position: fixed;
+			top: 10%;
+			color:white;
+		}
+		.menuButton{
+			color: white;
+			float: left;
+			border-bottom: double;
+		}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: -webkit-fill-available;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  position: absolute;
+  top: 100%;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.buttonCard {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.acard {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+.instagram{
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+img#Cardimg:hover {
+    opacity: 50%;
+}
+.codingBackground {
+	background-color: dimgray;
+	width: 99%;
+	position: absolute;
+	top: 435%;
+	font-family: cursive;
+}
+</style>
+</head>
+<body>
+	<center><h1 class="title" id="title">Adam's website welcome page</h1></center>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="bannerImg">
+		<h1> <br><br> "Enjoy the little things in life that's what going to help you!"<br><br>-adam laffoon</h1><br><br>
+	</div>
+	<div style="width: 99%;">
+		<h1 id="pageInfo" style="text-align: left;"><br><br></h1>
+	</div>
+	<div class="menu" style="position: absolute;top: 10%;">
+		<button id="about"style="background: transparent; border-color:transparent;">
+			<h1 class="menuButton" style="float:left;border-bottom: double; background: transparent;">about me</h1>
+			<button id="projects"style="background: transparent; border-color:transparent;">
+			<h1 class="menuButton" style="float:left;border-bottom: double; background: transparent;">My coding projects</h1>
+		</button>
+		<button onclick="openDis()" style="background: transparent; border-color:transparent;">
+			<h1 class="menuButton">Privacy Disclosures</h1>
+		</button>
+	</div>
+	<br>
+		<br>
+		<br>
+	<!-- <h1 onclick="nextButton()" style="position: absolute;float: left;">nextpage</h1> -->
+	<div id="privacy" style="visibility: hidden; position:absolute;top:-200%;">
+	<center><h1>Privacy Disclosures</h1></center>
+	<p>At adam's blog, we take your privacy seriously. This Privacy Disclosures document explains how we collect, use, and safeguard the information you provide to us, including your country name, state name, ZIP code, and city name. By using our website, you consent to the terms outlined in this document.</p>
+
+	<h2>1. Collection of Information</h2>
+	<p><strong>1.1 Personal Information:</strong> When you visit our website, we may collect personal information such as your country name, state name, ZIP code, and city name. This information may be collected through various means, including but not limited to forms, surveys, and user account registration.</p>
+
+	<h2>2. Use of Information</h2>
+	<p><strong>2.1 Personalization:</strong> The information collected, including your country name, state name, ZIP code, and city name, may be used to personalize your experience on our website. This may include displaying relevant content, tailored recommendations, or providing location-specific services.</p>
+	<p><strong>2.2 Analytics:</strong> We may use the collected information for analytical purposes to understand user demographics, preferences, and trends. This data helps us improve our website, content, and services.</p>
+
+	<h2>3. Data Security</h2>
+	<p><strong>3.1 Data Protection:</strong> We employ industry-standard security measures to protect your personal information. This includes encryption, access controls, and regular system monitoring to prevent unauthorized access, disclosure, alteration, or destruction of your data.</p>
+	<p><strong>3.2 Third-Party Services:</strong> In certain cases, we may engage third-party service providers to assist with data storage, processing, or analysis. These providers are carefully selected and obligated to adhere to strict privacy and security standards.</p>
+
+	<h2>4. Data Retention</h2>
+	<p><strong>4.1 Retention Period:</strong> We retain your personal information, including your country name, state name, ZIP code, and city name, for as long as necessary to fulfill the purposes outlined in this Privacy Disclosures document or as required by law.</p>
+	<h2>5. Your Choices</h2>
+	<p><strong>5.1 Opt-Out:</strong> You have the right to opt-out of providing certain personal information. However, please note that this may limit your access to certain features or services on our website.</p>
+</div>
+		<footer id="footerWelcome">
+			<h3 id="footerTitle"><center>California consumer privacy act(CCPA)</h3>
+			<h3 id="footerMainText">By clicking agree you give us permission to sell and store your data and information. you can click the link to see what information we sell and store<br><a onclick="setFooterText('CCPA')">what information do we sell</a></h3>
+			<button onclick="closeFooter(false)" style="float: right; background: transparent;color: white; border-color: transparent;"><h2>disagree</h2></button>
+			<button onclick="closeFooter(true)" style="float: right; background: transparent;color: white; border-color: transparent;"><h2>agree</h2></button>
+		</footer>
+	</div>
+</body>
+<script type="text/javascript">
+	let num = 0;
+	let countryName;
+	let state;
+	let city;
+	let postal;
+	let pDis = false;
+	let cardBoolean = true;
+	let jsonData = {
+		"daysList": ["day1", "day2", "day3"],
+		"day1": [["title", "Adam's blog day1"], ["pageData", "Today is May 23 and I just published the website. I'm having a really bad day today, I don't know why"]],
+		"day2": [["title", "Adam's blog day2"], ["pageData", "Today is May 24. I just got this website up and running with little to no bugs and errors"]],
+		"day3": [["title", "Adam's blog day3"], ["pageData", "This is day three of my great story"]]
+	};
+
+	let CCPABoolean;
+
+
+	function formatAMPM(date) {
+		var hours = date.getHours();
+		var minutes = date.getMinutes();
+		ampm = hours >= 12 ? 'pm' : 'am';
+		hours = hours % 12;
+		hours = hours ? hours : 12; // the hour '0' should be '12'
+		minutes = minutes < 10 ? '0'+minutes : minutes;
+		strTime = hours + ':' + minutes + ' ' + ampm;
+		return strTime;
+	}
+
+	function closeFooter(state){
+		let elm = document.getElementById('footerWelcome');
+		if(state == true){
+			CCPABoolean = true;
+			failSafeCCPA = true;
+			elm.remove();
+			getLocation();
+		}
+		else{
+			failSafeCCPA = false;
+			CCPABoolean = false;
+			elm.remove();
+		}
+		console.log(CCPABoolean);
+	}
+
+	function nextButton(){
+		let day = jsonData["daysList"][num];
+		day = jsonData[day];
+		console.log(day);
+		console.log(jsonData["daysList"].length - 1);
+		if (num == jsonData["daysList"].length - 1) {
+			let day = jsonData["daysList"][num];
+			day = jsonData[day];
+			setText(day);
+			num = 0;
+		}
+		else{
+			let day = jsonData["daysList"][num];
+			day = jsonData[day];
+			num++;
+			setText(day);
+		}
+	}
+
+	function setText(json){
+		day = json;
+		console.log(day);
+		title = document.getElementById("title");
+		pageOutput = document.getElementById("pageInfo");
+		pageOutput.innerHTML = "";
+		pageOutput.innerHTML = day[1][1];
+		title.innerHTML = day[0][1];
+	}
+
+	function setFooterText(data) {
+		if (data == "CCPA") {
+			text = document.getElementById("footerMainText");
+			let output = 'we sell country name(if you are in US we also sell your state name), city name and zip code all basic information';
+			text.innerHTML = output;
+		}
+	}
+
+	function getLocation() {
+		if (CCPABoolean == true & failSafeCCPA == true) {
+			$.ajax({
+				url: "https://geolocation-db.com/jsonp",
+				jsonpCallback: "callback",
+				dataType: "jsonp",
+				success: function(location) {
+					countryName = location.country_name;
+					state = location.state;
+					city = location.city;
+					postal = location.postal;
+					console.log(countryName + " " + state + " " + city + " " + postal);
+				}
+			});
+		} else {
+			return console.error("FAILED ERROR CODE 0X00001");
+		}
+	}
+	function openDis() {
+	if(pDis==false){
+		var stepOneandhalf = document.getElementById('card');
+		var stepOne = document.getElementById('privacy');
+		var stepTwo = stepOne.style.visibility = "visible";
+		var stepThree = stepOne.style.top = "100%"
+		stepOneandhalf.style.visibility = "hidden"
+		pDis = true
+	}
+	else{
+		var stepOne = document.getElementById('privacy');
+		var stepOneandhalf = document.getElementById('card');
+		var stepTwo = stepOne.style.visibility = "hidden";
+		var stepThree = stepOne.style.top = "-200%";
+		stepOneandhalf.style.visibility = "visible"
+		pDis = false;
+
+	}
+	}
+	function infocard(){
+		if (cardBoolean == false) {
+			var stepOne = document.getElementById('card');
+			var stepThree = stepOne.style.top = "-200%";
+			cardBoolean = true;
+		}
+		else{
+			var stepOne = document.getElementById('card');
+			var stepThree = stepOne.style.top = "100%";
+			cardBoolean = true;
+		}
+
+	}
+$('#about').click(function(){
+	if (pDis == true) {
+		return console.error("privacy is open");
+	}
+	else{
+		// $('body,html').animate({scrollTop: 800}, 800);
+		document.getElementById('card').scrollIntoView();
+	}
+});
+$('#projects').click(function(){
+	if (pDis == true) {
+		return console.error("privacy is open");
+	}
+	else{
+		// $('body,html').animate({scrollTop: 800}, 800);
+		document.getElementById('coding').scrollIntoView();
+	}
+});
+	let loginTIme = formatAMPM(new Date);
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5013020844247498" crossorigin="anonymous"></script>
+<div class="card" id="card">
+	<p><button onclick="infocard()"class="buttonCard"style="background:black;color: white; float: right;width: 50px;height: 50px; border-radius:100%;">&times;</button></p>
+  <img src="assts/IMG_0963.jpg" alt="user picture" style="width:100%;border-radius: 10%;"id="Cardimg">
+  <h1>Adam Laffoon</h1>
+  <p class="title">you can email me at ADAMLEELAFFOON@PRIMERICA.COM</p>
+  <div style="margin:0;">
+  	<p class="title" style="color:#ccc">I'm a life Insurance agent.Still in training</p>
+    <a class="acard"href="https://www.instagram.com/adam77461/"><i class="fa fa-instagram instagram"></i></a> 
+    <a href="https://www.linkedin.com/in/adam-laffoon-9537b8255/"><i class="fa fa-linkedin"></i></a>
+
+  </div>
+  <h3 style="text-align: start;">Hi there I'm Adam. I hope your doing here a little about me. I like to do web design in fact this website was made from scratch.</h3>
+</div>
+<div id="coding" class="codingBackground">
+	<center><h3>coding under construction</h3></center>
+	<p style="text-align:start;">here are some</p>
+	<br>
+	<p>Follow my github<a style="text-align:end;font-size: 73px;border-radius: 50%;" href="#"><i style="color: white;" class="fa fa-github"></i></a></p>
+</div>
+</body>
+</html>
+
+
